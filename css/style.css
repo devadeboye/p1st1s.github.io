@@ -241,7 +241,7 @@
 /*//////////////////////////////////////////////////////
 //         CODES FOR PHONES WITH WIDTH 360px          //
 //////////////////////////////////////////////////////*/
-@media screen and (width: 360px){
+@media (width: 360px){
     body{
         font-size: 15px;
     }
@@ -390,7 +390,7 @@
 /*//////////////////////////////////////////////////////
 //         CODES FOR PHONES WITH WIDTH 320px          //
 //////////////////////////////////////////////////////*/
-@media screen and (width: 320px){
+@media (max-width: 320px){
     body{
         font-size: 14px;
     }
@@ -541,7 +541,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 812px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 812px){
+@media (min-height: 812px){
     #welcome-section{
         height: 812px;
     }
@@ -553,7 +553,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 740px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 740px){
+@media (min-height: 740px) and (max-height: 811px){
     #welcome-section{
         height: 740px;
     }
@@ -569,7 +569,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 736px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 736px){
+@media (height: 736px){
     #welcome-section{
         height: 736px;
     }
@@ -577,22 +577,11 @@
 	   height: 736px;
     }
 }
-/*///////////////////////////////////////////////////
-                STYLE FOR HEIGHT 667px
-///////////////////////////////////////////////////*/
-@media screen and (height: 667px){
-    #welcome-section{
-        height: 667px;
-    }
-    #welcome-overlay {
-	   height: 667px;
-    }
-}
 
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 640px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 640px){
+@media (min-height: 640px) and (max-height: 735px){
     #welcome-section{
         height: 640px;
     }
@@ -604,7 +593,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 568px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 568px){
+@media (min-height: 568px) and (max-height: 639px){
     #welcome-section{
         height: 568px;
     }
