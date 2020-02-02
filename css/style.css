@@ -541,7 +541,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 812px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 812px){
+@media screen and (min-height: 812px){
     #welcome-section{
         height: 812px;
     }
@@ -553,7 +553,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 740px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 740px){
+@media screen and (min-height: 740px){
     #welcome-section{
         height: 740px;
     }
@@ -569,7 +569,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 736px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 736px){
+@media screen and (min-height: 736px){
     #welcome-section{
         height: 736px;
     }
@@ -580,7 +580,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 667px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 667px){
+@media screen and (min-height: 667px){
     #welcome-section{
         height: 667px;
     }
@@ -592,7 +592,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 640px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 640px){
+@media screen and (min-height: 640px){
     #welcome-section{
         height: 640px;
     }
@@ -604,7 +604,7 @@
 /*///////////////////////////////////////////////////
                 STYLE FOR HEIGHT 568px
 ///////////////////////////////////////////////////*/
-@media screen and (height: 568px){
+@media screen and (min-height: 568px){
     #welcome-section{
         height: 568px;
     }
