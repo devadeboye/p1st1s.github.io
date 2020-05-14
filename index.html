@@ -4,92 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adeboye Emmanuel | Home</title>
-    <link rel="stylesheet" href="./css/brands.min.css">
-    <link rel="stylesheet" href="./css/fontawesome.min.css">
-    <link rel="stylesheet" href="./css/solid.min.css">
+    <title>Home | Adeboye Emmanuel</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!--<div id="container">-->
-        <nav id="navbar">
-            <button class="fa fa-bars fa_solid" id="menu_button" onclick="menu_btn()"></button>
-            <button class="" id="close_btn" onclick="close_b()">X</button>
-            <ul id="mobile_nav" class="">
-                <a href="#welcome-section" class="navbar_link">
-                    <li>Home</li>
-                </a>
-                <a href="#projects" class="navbar_link">
-                    <li>Projects</li>
-                </a>
-                <a href="#contact" class="navbar_link">
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </nav>
-        <section id="welcome-section">
-            <div id="welcome-overlay">
-                <h1 id="intro">
-                    Hey I'm Adeboye Emmanuel
-                </h1>
-                <div>
-                    <i>A Software Developer</i>
+    <div id="container">
+        <section id="welcome"></section>
+        <section id="services">
+            <header class="header">Services</header>
+            <div id="service_container">
+                <div class="service_item" id="service1">
+                    <div class="service_image">
+                        <img src="./img/icons/responsive.svg" alt="web development icon" id="web_dev_icon">
+                    </div>
+                    <div class="service_header">
+                        web development
+                    </div>
+                    <div class="service_description" id="service1_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quam unde ipsa magnam exercitationem provident saepe. Ipsa ipsam laudantium porro veniam quod? Aliquam rem ea magnam mollitia eligendi perferendis blanditiis.
+                    </div>
                 </div>
-                <a href="#projects">
-                    <button id="view_works">
-                        View projects
-                    </button>
-                </a>
+                <div class="service_item">
+                    <div class="service_image">
+                        <img src="./img/icons/code.svg" alt="software development icon" id="software_dev_icon">
+                    </div>
+                    <div class="service_header">
+                        software development
+                    </div>
+                    <div class="service_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quam unde ipsa magnam exercitationem provident saepe. Ipsa ipsam laudantium porro veniam quod? Aliquam rem ea magnam mollitia eligendi perferendis blanditiis.
+                    </div>
+                </div>
+                <div class="service_item" id="service3">
+                    <div class="service_image">
+                        <img src="./img/icons/web_search2.svg    " alt="web scraping icon" id="web_scraping_icon">
+                    </div>
+                    <div class="service_header">
+                        web scraping
+                    </div>
+                    <div class="service_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quam unde ipsa magnam exercitationem provident saepe. Ipsa ipsam laudantium porro veniam quod? Aliquam rem ea magnam mollitia eligendi perferendis blanditiis.
+                    </div>
+                </div>
             </div>
         </section>
         <section id="projects">
-            <h2 id="proj_section_header">Projects</h2>
-            <div class="project-tile">
-                <img src="./img/Boye_alarm.png" class="project_image" alt="image of BoyeTodo app">
-                <br>
-                <a href="#" class="project-link">
-                    <figcaption>BoyeAlarm</figcaption>
-                </a>
-            </div>
-            <div class="project-tile">
-                <img src="./img/Boye_Todo.png" class="project_image" alt="image of BoyeTodo app">
-                <br>
-                <a href="#" class="project-link">
-                    <figcaption>BoyeTodo</figcaption>
-                </a>
-            </div>
-            <div class="project-tile">
-                <img src="./img/Screenshot_2019-09-23_Boye_Home.jpg" class="project_image" alt="image of BoyeTodo app">
-                <br>
-                <a href="#" class="project-link">
-                    <figcaption>Adeboye.tk</figcaption>
-                </a>
-            </div>
-        </section>
-        <section id="contact">
-            <h2 id="contact_head">Contact</h2>
-            <div id="contact_body">
-                <span>Need to get in touch? mail me</span>
-                <a href="mailto:adeboye@gmail.com" id="mail_me">
-                    <button>here</button>
-                </a>
-            </div>
-        </section>
-        <footer id="footer">
-            <div id="social">
-                <a href="http://www.facebook.com/" class="fa fa-facebook"></a>
-                <a href="http://github.com/p1st1s" class="fa fa-github" id="profile-link"></a>
-                <a href="http://twitter.com/p1st1s" class="fa fa-twitter"></a>
-            </div>
-            <div id="quick_links">
-                <div id="site_nav">
-                    <a href="#welcome-section">Home</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact Me</a>
+            <header class="header">Recent Projects</header>
+            <div id="project_container">
+                <div id="col_1"></div>
+                <div id="col_2">
+                    <div id="col_2a"></div>
+                    <div id="col_2b"></div>
+                </div>
+                <div id="col_3">
+                    <div id="col_3a"></div>
+                    <div id="col_3b"></div>
                 </div>
             </div>
+        </section>
+        <section id="contact_me">
+            <div id="contact_container">
+                <span id="contact_text">
+                    Need to get in touch with me? 
+                    <button id="contact_button">mail me</button>
+                </span>
+            </div>
+        </section>
+        <footer>
+            <header>Around the web</header>
+            <div>
+                <a href="#">
+                    <img src="./img/icons/facebook.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/icons/twitter-square.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/icons/telegram.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/icons/whatsapp-square.svg" alt="">
+                </a>
+            </div>
         </footer>
-    <!--</div>-->
-    <script src="./js/script.js"></script>
+    </div>
 </body>
 </html>
