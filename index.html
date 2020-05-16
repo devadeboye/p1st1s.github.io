@@ -6,32 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | Adeboye Emmanuel</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/height.css">
 </head>
-<body>
+<body onload="brython(1);">
     <div id="container">
         <section id="welcome">
-            <nav>
-                <ul id="nav_list">
-                    <a href="#"><li>home</li></a>
-                    <a href="#"><li>about</li></a>
-                    <a href="#"><li>services</li></a>
-                    <a href="#"><li>projects</li></a>
-                    <a href="#"><li>contact Me</li></a>
-                </ul>
-            </nav>
-            <div id="introduction">
-                <div id="intro_inner_container">
-                    <div id="intro_text">
-                        I'm Emmanuel
+            <div id="background_overlay">
+                <div id="mobile_nav_btn">
+                    <img src="./img/icons/menu_btn.svg" id="menu_icon" class="menu_btn show">
+                    <img src="/img/icons/ic_clear_black_24px.svg" id="close_icon" class="menu_btn hide">
+                </div>
+                <nav id="mobile_nav" class="hide">
+                    <ul id="nav_list">
+                        <a href="#"><li>home</li></a>
+                        <a href="#"><li>about</li></a>
+                        <a href="#"><li>services</li></a>
+                        <a href="#"><li>projects</li></a>
+                        <a href="#"><li>contact Me</li></a>
+                    </ul>
+                </nav>
+                <nav id="large_nav">
+                    <ul id="nav_list">
+                        <a href="#"><li>home</li></a>
+                        <a href="#"><li>about</li></a>
+                        <a href="#"><li>services</li></a>
+                        <a href="#"><li>projects</li></a>
+                        <a href="#"><li>contact Me</li></a>
+                    </ul>
+                </nav>
+                <div id="introduction">
+                    <div id="intro_inner_container">
+                        <div id="intro_text">
+                            I'm Emmanuel
+                        </div>
+                        <div id="intro_2">
+                            A software developer | An Entrepreneur
+                        </div>
+                        <a href="#">
+                            <button id="about_acton_butn">
+                                about me
+                            </button>
+                        </a>
                     </div>
-                    <div id="intro_2">
-                        A software developer | An Entrepreneur
-                    </div>
-                    <a href="#">
-                        <button id="about_acton_butn">
-                            about me
-                        </button>
-                    </a>
                 </div>
             </div>
         </section>
@@ -77,15 +93,39 @@
             <header class="header">Recent Projects</header>
             <div id="project_container">
                 <div id="col_1">
-                    <div id="col_1a"></div>
+                    <div id="col_1a">
+                        <img src="./img/boye.jpg" alt="image of project" class="project_image">
+                        <div class="project_name">
+                            Boye.com
+                        </div>
+                    </div>
                     <div id="col_1b">
-                        <div id="col_1b1"></div>
-                        <div id="col_1b2"></div>
+                        <div id="col_1b1">
+                            <img src="./img/IMG_0001.jpg" alt="image of project" class="project_image">
+                            <div class="project_name" id="proj2_label">
+                                Foo.com
+                            </div>
+                        </div>
+                        <div id="col_1b2">
+                            <img src="./img/DSC_9839.JPG" alt="image of project" class="project_image">
+                            <div class="project_name" id="proj3_label">
+                                Squidbaby
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="col_2">
-                    <div id="col_2a"></div>
+                    <div id="col_2a">
+                        <img src="./img/Adeboye Emmanuel.png" alt="image of project" class="project_image">
+                        <div class="project_name" id="proj4_label">
+                            Adeboye.tk
+                        </div>
+                    </div>
                     <div id="col_2b">
+                        <img src="./img/boye.jpg" alt="image of project" class="project_image">
+                        <div class="project_name" id="proj5_label">
+                            BoyeAlarm
+                        </div>
                     </div>
                 </div> 
             </div>
@@ -93,8 +133,12 @@
         <section id="contact_me">
             <div id="contact_container">
                 <span id="contact_text">
-                    Need to get in touch with me? 
-                    <button id="contact_button">mail me</button>
+                    Need to get in touch with me?
+                    <a href="mailto:adeboye@gmail.com">
+                        <button id="contact_button">
+                            mail me
+                        </button>
+                    </a>
                 </span>
             </div>
         </section>
@@ -116,5 +160,7 @@
             </div>
         </footer>
     </div>
+    <script src="./scripts/brython.js"></script>
+    <script type="text/python" src="./scripts/scripts.py"></script>
 </body>
 </html>
