@@ -135,32 +135,67 @@
                 <span id="contact_text">
                     Need to get in touch with me?
                     <a href="mailto:adeboye@gmail.com">
-                        <button id="contact_button">
+                        <span id="contact_button">
                             mail me
-                        </button>
+                        </span>
                     </a>
                 </span>
             </div>
         </section>
         <footer>
-            <header id="footer_header">Around the web</header>
-            <div id="social">
-                <a href="#">
-                    <img src="./img/icons/facebook.svg" alt="" id="facebook">
-                </a>
-                <a href="#">
-                    <img src="./img/icons/twitter-square.svg" alt="" id="twitter">
-                </a>
-                <a href="#">
-                    <img src="./img/icons/telegram.svg" alt="" id="telegram">
-                </a>
-                <a href="#">
-                    <img src="./img/icons/whatsapp-square.svg" alt="" id="whatsapp">
-                </a>
+            <div id="link_wrapper">
+                <header>Quick links</header>
+                <div id="quick_links">
+                    <div class="q_link_row">
+                        <img src="./img/icons/home.svg" class="q_link_icon">
+                        <a href="#welcome">Home</a>
+                    </div>
+                    <div class="q_link_row">
+                        <img src="./img/icons/user.svg" class="q_link_icon">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="q_link_row">
+                        <img src="./img/icons/cogs.svg" class="q_link_icon">
+                        <a href="#">Services</a>
+                    </div>
+                    <div class="q_link_row">
+                        <img src="./img/icons/film.svg" class="q_link_icon">
+                        <a href="#">Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div id="social_wrapper">
+                <header id="footer_header">Around the web</header>
+                <div id="social">
+                    <div class="social_row">
+                        <img src="./img/icons/facebook.svg" alt="" id="facebook">
+                        <a href="#">Facebook</a>
+                    </div>
+                    <div class="social_row">
+                        <img src="./img/icons/twitter-square.svg" alt="" id="twitter">
+                        <a href="#">Twitter</a>
+                    </div>
+                    <div class="social_row">
+                        <img src="./img/icons/telegram.svg" alt="" id="telegram">
+                        <a href="#">Telegram</a>
+                    </div>
+                    <div class="social_row">
+                        <img src="./img/icons/whatsapp-square.svg" alt="" id="whatsapp">
+                        <a href="#">Whatsapp</a>
+                    </div>
+                    <div id="email">
+                        <img src="./img/icons/envelope.svg" alt="" id="gmail">
+                        Email: <span id="show_email">click to show email</span>
+                    </div>
+                </div>
+            </div>
+            <div id="blank">
+
             </div>
         </footer>
     </div>
     <script src="./scripts/brython.js"></script>
+    <script src="./scripts/brython_stdlib.js"></script>
     <script type="text/python" src="./scripts/scripts.py"></script>
 </body>
 </html>

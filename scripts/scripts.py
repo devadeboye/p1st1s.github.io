@@ -14,6 +14,7 @@ def show_menu(event):
         menu.classList.remove("hide")
         menu.classList.add("show")
 
+
 @bind("#close_icon", "click")
 def hide_menu(event):
     menu = document["mobile_nav"]
@@ -26,3 +27,8 @@ def hide_menu(event):
         menu_button.classList.add("show")
         menu.classList.remove("show")
         menu.classList.add("hide")
+
+
+@bind("#show_email", "click")
+def show_email(event):
+    document["show_email"].textContent = "adeboye3a@gmail.com"
