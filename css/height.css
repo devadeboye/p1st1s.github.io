@@ -1,0 +1,17 @@
+@media screen and (max-height: 414px) {
+    #welcome {
+        height: 375px;
+    }
+    #background_overlay {
+        height: 375px;
+    }
+}
+
+@media screen and (max-height: 360px) {
+    #welcome {
+        height: 360px;
+    }
+    #background_overlay {
+        height: 360px;
+    }
+}
