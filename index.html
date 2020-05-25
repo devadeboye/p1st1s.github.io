@@ -19,19 +19,19 @@
                 <nav id="mobile_nav" class="hide">
                     <ul id="nav_list">
                         <a href="#"><li>home</li></a>
-                        <a href="#"><li>about</li></a>
-                        <a href="#"><li>services</li></a>
+                        <a href="#about"><li>about</li></a>
+                        <a href="./pages/services.html"><li>services</li></a>
                         <a href="#"><li>projects</li></a>
-                        <a href="#"><li>contact Me</li></a>
+                        <a href="#contact_me"><li>contact</li></a>
                     </ul>
                 </nav>
                 <nav id="large_nav">
                     <ul id="nav_list">
                         <a href="#"><li>home</li></a>
-                        <a href="#"><li>about</li></a>
-                        <a href="#"><li>services</li></a>
+                        <a href="#about"><li>about</li></a>
+                        <a href="./pages/services.html"><li>services</li></a>
                         <a href="#"><li>projects</li></a>
-                        <a href="#"><li>contact Me</li></a>
+                        <a href="#contact_me" id="contact_link"><li>contact</li></a>
                     </ul>
                 </nav>
                 <div id="introduction">
@@ -42,7 +42,7 @@
                         <div id="intro_2">
                             A software developer | An Entrepreneur
                         </div>
-                        <a href="#" class="ea_btn">
+                        <a href="#about" class="ea_btn">
                             about me
                         </a>
                     </div>
@@ -83,6 +83,61 @@
                     </div>
                     <div class="service_description" id="service3_text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quam unde ipsa magnam exercitationem provident saepe. Ipsa ipsam laudantium porro veniam quod? Aliquam rem ea magnam mollitia eligendi perferendis blanditiis.
+                    </div>
+                </div>
+            </div>
+            <div id="service_btn_wrapper">
+                <a href="#" class="ea_btn" id="service_details">Learn More</a>
+            </div>
+        </section>
+        <section id="about">
+            <header class="header">About</header>
+            <div id="about_body">
+                <div><img src="./img/IMG_0001.jpg" alt="photo of Emmanuel" id="profile_pics"></div>
+                <div id="about_text">
+                    <p>
+                        Hi, my name is Emmanuel. I am a Software Developer and i am
+                        very passionate about my work. My favourite tool is python, 
+                        i can work with other tools and picking up a new tool isn't 
+                        a problem.
+                    </p>
+                    <div id="skills">
+                        <div class="skill_row">
+                            <div class="skill_name">
+                                <span id="web_dev_skill">Web Development</span>
+                            </div>
+                            <div id="web_dev_meter">
+                                <div class="on"><span class="skill_level">95%</span></div>
+                                <div class="off"></div>
+                            </div>
+                        </div>
+                        <div class="skill_row">
+                            <div class="skill_name">
+                                <span id="web_des_skill">Web Design</span>
+                            </div>
+                            <div id="web_des_meter">
+                                <div class="on"><span class="skill_level">70%</span></div>
+                                <div class="off"></div>
+                            </div>
+                        </div>
+                        <div class="skill_row">
+                            <div class="skill_name">
+                                <span id="soft_dev_skill">Software Development</span>
+                            </div>
+                            <div id="soft_dev_meter">
+                                <div class="on"><span class="skill_level">95%</span></div>
+                                <div class="off"></div>
+                            </div>
+                        </div>
+                        <div class="skill_row">
+                            <div class="skill_name">
+                                <span id="python_skill">Python</span>
+                            </div>
+                            <div id="python_meter">
+                                <div class="on"><span class="skill_level">97%</span></div>
+                                <div class="off"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,11 +208,13 @@
         <section id="contact_me">
             <div id="contact_container">
                 <span id="contact_text">
-                    Need to get in touch with me?
-                    <a href="mailto:adeboye@gmail.com" class="ea_btn" id="contact_button">
-                        mail me
-                    </a>
+                    Need to contact me?
                 </span>
+                <div id="contact_button_wrap">
+                    <a href="mailto:adeboye@gmail.com" class="ea_btn" id="contact_button">
+                        Click here
+                    </a>
+                </div>
             </div>
         </section>
         <footer>
@@ -165,19 +222,15 @@
                 <header>Quick links</header>
                 <div id="quick_links">
                     <div class="q_link_row">
-                        <img src="./img/icons/home.svg" class="q_link_icon">
                         <a href="#welcome">Home</a>
                     </div>
                     <div class="q_link_row">
-                        <img src="./img/icons/user.svg" class="q_link_icon">
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </div>
                     <div class="q_link_row">
-                        <img src="./img/icons/cogs.svg" class="q_link_icon">
-                        <a href="#">Services</a>
+                        <a href="./pages/services.html">Services</a>
                     </div>
                     <div class="q_link_row">
-                        <img src="./img/icons/film.svg" class="q_link_icon">
                         <a href="#">Projects</a>
                     </div>
                 </div>
@@ -186,23 +239,15 @@
                 <header id="social_header">Around the web</header>
                 <div id="social">
                     <div class="social_row">
-                        <img src="./img/icons/facebook.svg" class="social_icon" id="facebook">
                         <a href="#">Facebook</a>
                     </div>
                     <div class="social_row">
-                        <img src="./img/icons/twitter-square.svg" class="social_icon" id="twitter">
                         <a href="#">Twitter</a>
                     </div>
                     <div class="social_row">
-                        <img src="./img/icons/telegram.svg" class="social_icon" id="telegram">
                         <a href="#">Telegram</a>
                     </div>
-                    <div class="social_row">
-                        <img src="./img/icons/whatsapp-square.svg" class="social_icon" id="whatsapp">
-                        <a href="#">Whatsapp</a>
-                    </div>
                     <div id="email">
-                        <img src="./img/icons/envelope.svg" class="social_icon" id="gmail">
                         Email: <span id="show_email">click to show email</span>
                     </div>
                 </div>

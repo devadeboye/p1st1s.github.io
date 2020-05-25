@@ -20,7 +20,8 @@
 }
 body{
     font-family: "PTSans";
-    font-size: 14px;
+	font-size: 14px;
+	background-color: #f1f1f1;
 }
 .ea_btn {
 	height: 38px !important;
@@ -60,7 +61,7 @@ body{
 	list-style-type: none;
 	padding: 2% 5%;
 	display: flex;
-	gap: 1.5%;
+	gap: 3.5%;
 	justify-content: end;
 	text-transform: capitalize;
 }
@@ -85,6 +86,9 @@ body{
 	height: 100%;
 	width: 456px;
 }
+#intro_2 {
+	margin-bottom: 5px;
+}
 #intro_text {
 	font-size: 60px;
 	font-weight: bolder;
@@ -95,13 +99,100 @@ body{
 	text-align: center;
 	font-size: 23px;
 	font-weight: bolder;
-	padding-bottom: 24px;
+	padding-bottom: 13px;
 	text-transform: uppercase;
+}
+#about {
+	background-color: #fff;
+	padding-top: 40px;
+	height: 380px;
+	margin-bottom: 7px;
+	box-sizing: border-box;
+}
+#about_body {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	width: 90%;
+	margin: auto;
+	padding: 0% 4%;
+	box-sizing: border-box;
+}
+#profile_pics {
+	margin: auto;
+	width: 100%;
+}
+#about_text {
+	padding: 0% 10%;
+}
+.skill_row {
+	height: 40px;
+}
+.skill_name {
+	padding: 4px 0px;
+}
+#python_skill {
+	margin-right: 36%;
+}
+#web_dev_skill {
+	margin-right: 23%;
+}
+#web_des_skill {
+	margin-right: 18%;
+}
+#soft_dev_skill {
+	margin-right: 18%;
+}
+#python_meter, #web_dev_meter, #web_des_meter, #soft_dev_meter {
+	display: flex;
+	box-sizing: border-box;
+	height: 14px;
+	width: 50%;
+	text-align: center;
+}
+#python_meter > .on {
+	background-color: #ccc;
+	width: 97%;
+}
+#python_meter > .off{
+	background-color: #f1f1f1;
+	width: 3%;
+}
+#web_dev_meter > .on {
+	background-color: #ccc;
+	width: 95%;
+}
+.skill_level {
+	font-size: 11px;
+	position: relative;
+	top: -4px;
+}
+#web_dev_meter > .off{
+	background-color: #f1f1f1;
+	width: 5%;
+}
+#web_des_meter > .on {
+	background-color: #ccc;
+	width: 70%;
+}
+#web_des_meter > .off{
+	background-color: #f1f1f1;
+	width: 30%;
+}
+#soft_dev_meter > .on {
+	background-color: #ccc;
+	width: 95%;
+}
+#soft_dev_meter > .off{
+	background-color: #f1f1f1;
+	width: 5%;
 }
 #services {
     width: 100%;
 	background: #fff;
 	padding-top: 47px;
+    height: 370px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
 }
 #service_container {
 	width: 90%;
@@ -111,12 +202,18 @@ body{
 	gap: 5%;
 	box-sizing: border-box;
 	padding: 0% 4%;
-	height: 255px;
+	height: 200px;
 }
 .service_item {
 	display: flex;
 	flex-direction: column;
 	gap: 17px;
+}
+#service_btn_wrapper {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 15px;
 }
 #service1{
 	gap: 14px;
@@ -150,6 +247,8 @@ body{
 #projects {
 	min-height: 400px;
 	background: #fff;
+	padding: 40px 0px;
+	margin-bottom: 7px;
 }
 #project_container {
 	width: 62%;
@@ -183,19 +282,26 @@ body{
 }
 #contact_me {
 	padding: 24px 0px;
-	font-size: 23px;
+	font-size: 16px;
+	background-color: #fff;
 }
 #contact_container {
 	width: 90%;
 	margin: auto;
 	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	gap: 58%;
+}
+#contact_text {
+	/*! float: left; */
 }
 footer {
 	height: 230px;
 	background: #000;
 	color: #ccc;
 	box-sizing: border-box;
-	padding: 10px 0%;
+	padding: 40px 0%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -204,13 +310,9 @@ footer {
 	font-size: 16px;
 }
 #social {
-	display: flex;
-	flex-direction: column;
 }
 .social_row{
-	display: flex;
-	gap: 7px;
-	padding: 0.6% 0.5%;
+	padding: 4px 0px;
 }
 .social_row a {
 	text-decoration: none;
@@ -232,7 +334,7 @@ footer {
 	scale: 0.7;
 }
 #link_wrapper {
-	padding-left: 26px;
+	padding-left: 64px;
 }
 #link_wrapper header {
 	font-weight: bolder;
@@ -249,9 +351,7 @@ footer {
 	text-decoration: none;
 }
 .q_link_row{
-	display: flex;
-	gap: 7px;
-	align-items: center;
+	padding: 4px 0px;
 }
 .q_link_icon{
 	scale: 0.7;
@@ -267,6 +367,7 @@ footer {
 @media screen and (min-width: 1367px) {
 	body {
 		width: 1366px;
+		margin: auto;
 	}
 }
 @media screen and (max-width: 812px) {
@@ -279,10 +380,25 @@ footer {
 		top: 125px;
 		height: 155px;
 	}
+	#service_btn_wrapper {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+		margin-top: 25px;
+	}
+	#services {
+		width: 100%;
+		background: #fff;
+		padding-top: 47px;
+		height: 410px;
+		box-sizing: border-box;
+		margin-bottom: 7px;
+	}
 	#service_container {
 		width: 96%;
 		gap: 14px;
 		padding: 0% 0%;
+		height: 224px;
 	}
 	.service_item {
 		padding: 2%;
@@ -299,6 +415,18 @@ footer {
 	#service3 {
 		gap: 17px;
 	}
+	#python_meter, #web_dev_meter, #web_des_meter, #soft_dev_meter {
+		display: flex;
+		box-sizing: border-box;
+		height: 14px;
+		width: 50%;
+		text-align: center;
+	}
+	.skill_level {
+		font-size: 11px;
+		position: relative;
+		top: -4px;
+	}
 	#projects {
 		height: 411px;
 	}
@@ -313,6 +441,17 @@ footer {
 	}
 	#contact_me {
 		font-size: 20px;
+	}
+	#contact_container {
+		width: 90%;
+		margin: auto;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		gap: 32%;
+	}
+	#contact_button {
+		width: 120px;
 	}
 }
 
@@ -333,20 +472,32 @@ footer {
 	#mobile_nav_btn, #mobile_nav{
 		display: none;
 	}
-	#large_nav{
+	#large_nav {
 		display: block;
+		width: 45%;
+		position: relative;
+		left: 52%;
+		top: 10px;
 	}
 	#nav_list {
 		list-style-type: none;
-		padding: 2% 5%;
-		display: flex;
-		gap: 2.5%;
-		justify-content: end;
+		padding: 2% 0% 0% 2%;
+		display: block;
 		text-transform: capitalize;
+		height: 30px;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
-	#nav_list a{
+	#nav_list a {
 		text-decoration: none;
 		color: #fff;
+		float: left;
+		margin-right: 19px;
+		position: relative;
+		top: 6px;
+	}
+	#contact_link {
+		margin-right: 0px !important;
 	}
 	#introduction {
 		color: #fff;
@@ -369,26 +520,33 @@ footer {
 		margin-bottom: 8px;
 	}
 	.header {
-		padding-bottom: 14px;
+		padding-bottom: 20px;
 	}
 	#services {
-		background: #f1f1f1;
-		padding-top: 43px;
+		padding: 40px 0px;
+		height: 645px;
 	}
 	#service_container {
 		width: 97%;
 		padding: 0% 0%;
-		height: 433px;
+		height: 438px;
 		display: block;
 	}
+	#service_btn_wrapper {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+		margin-top: 30px;
+	}
 	.service_item {
-		background-color: #fff;
+		background-color: #f9f9f9;
 		padding: 14px 10px;
-		width: 45.5%;
+		width: 45%;
 		display: block;
 		margin-right: 17px;
 		height: 180px;
 		float: left;
+		/*! border: solid 1px #f1f1f1; */
 	}
 	#service2 {
 		margin-right: 0px;
@@ -402,6 +560,18 @@ footer {
 	.service_image {
 		text-align: center;
 		margin-bottom: 5px;
+	}
+	#web_dev_skill {
+		margin-right: 7%;
+	}
+	#web_des_skill {
+		margin-right: 5%;
+	}
+	#soft_dev_skill {
+		margin-right: 3%;
+	}
+	#python_skill {
+		margin-right: 27%;
 	}
 	#web_dev_icon {
 		scale: 1.2;
@@ -418,10 +588,24 @@ footer {
 	.service_description {
 		text-align: center;
 	}
+	#about {
+		background-color: #fff;
+		padding: 40px 0px;
+		height: 400px;
+		margin-bottom: 7px;
+		box-sizing: border-box;
+	}
+	#python_meter, #web_dev_meter, #web_des_meter, #soft_dev_meter {
+		display: flex;
+		box-sizing: border-box;
+		height: 14px;
+		width: 85%;
+		text-align: center;
+	}
 	#projects {
-		background: #f1f1f1;
-		margin-top: 30px;
-		height: 690px;
+		background: #fff;
+		padding: 40px 0px;
+		height: 765px;
 	}
 	#project_container {
 		display: none;
@@ -480,20 +664,22 @@ footer {
 		grid-template-columns: 8fr 5fr;
 	}
 	#contact_me {
-		padding: 20px 0px;
+		padding: 15px 0px;
 		clear: both;
 	}
 	#contact_container {
 		width: 90%;
 		margin: auto;
 		box-sizing: border-box;
+		gap: 35%;
 	}
 	footer {
 		grid-template-columns: 1fr 1fr;
+		padding: 20px 0px;
+		height: 170px;
 	}
 	.social_row{
-		display: flex;
-		padding: 0.6% 0.5%;
+	padding: 4px 0px;
 	}
 	.social_row a {
 		text-decoration: none;
@@ -515,12 +701,10 @@ footer {
 		scale: 0.7;
 	}
 	#link_wrapper {
-		padding-left: 30px;
+		padding-left: 10%;
 	}
 	#quick_links {
-		display: flex;
-		flex-direction: column;
-		gap: 7px;
+		display: block;
 		box-sizing: border-box;
 	}
 	#quick_links a {
@@ -803,11 +987,9 @@ footer {
 	}
 	#intro_inner_container {
 		text-transform: capitalize;
-		display: flex;
-		flex-direction: column;
-		gap: 0px;
+		display: block;
 		height: 100%;
-		width: 100%;
+		width: max-content;
 	}
 	#intro_inner_container a {
 		text-align: center;
@@ -822,32 +1004,37 @@ footer {
 		margin-bottom: 7px;
 	}
 	#intro_2 {
-		text-align: center;
 		margin-bottom: 7px;
 	}
 	.header {
 		font-size: 23px;
-		padding-bottom: 7px;
+		padding-top: 0px;
+		padding-bottom: 15px;
 	}
 	#services {
-        height: 742px;
-        padding-top: 32px;
+        height: 713px;
+        padding: 35px 0px;
+        background-color: #fff;
 	}
 	#service_container {
 		width: 98%;
-		height: 680px;
+		height: 554px;
 		display: block;
 	}
 	.service_header {
-		margin-bottom: 8px;
+		margin-bottom: 9px;
 	}
 	.service_item {
-		height: 217px;
+		height: 270px;
 		display: block;
-		margin-bottom: 10px;
+		margin-bottom: 0px;
+		width: 48%;
+		padding: 13px 5px;
+		box-sizing: border-box;
+		background-color: #f4f4f4;
 	}
 	.service_image {
-		margin-bottom: 8px;
+		margin-bottom: 9px;
 	}
 	#service1_text {
 		margin-top: 0px;
@@ -855,13 +1042,32 @@ footer {
 	#service3 {
 		gap: 9px;
 	}
+	#service_btn_wrapper {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 0px;
+		margin-top: 10px;
+		clear: both;
+	}
+	#about {
+		background-color: #fff;
+		padding: 30px 0px;
+		height: 430px;
+		margin-bottom: 7px;
+		box-sizing: border-box;
+	}
+	.skill_level {
+		font-size: 11px;
+		position: relative;
+		top: -6px;
+	}
 	#project_container {
 		display: none;
 	}
 	#project_small_display {
 		width: 62%;
 		height: 1082px;
-		background-color: #f1f1f1;
+		background-color: #fff;
 		display: block;
 		margin: auto;
 		/*! box-sizing: border-box; */
@@ -872,6 +1078,7 @@ footer {
 		background-color: #fff;
 		margin-bottom: 11px;
 		text-align: center;
+		width: 100%;
 	}
 	.proj_name_mobile {
 		height: 36px;
@@ -928,8 +1135,10 @@ footer {
 		background-color: transparent;
   }
 	#projects {
-		height: 1115px;
-		background: #f1f1f1;
+		height: 1183px;
+		background: #fff;
+		padding: 30px 0px;
+		margin-top: 0px;
 	}
 	.project_image {
 		width: 100%;
@@ -955,7 +1164,7 @@ footer {
 	}
 	#contact_text {
 		position: relative;
-		left: 16px;
+		padding-left: 2%;
 	}
 	#contact_text a {
 		text-decoration: none;
@@ -965,12 +1174,12 @@ footer {
 	}
 	footer {
 		height: max-content;
-		padding: 2% 2%;
+		padding: 20px 0px;
 		display: block;
 	}
 	#link_wrapper {
 		padding-left: 0%;
-		height: 130px;
+		height: 160px;
 	}
 	#link_wrapper header {
 		font-weight: bolder;
@@ -1001,9 +1210,8 @@ footer {
 		text-align: center;
 	}
 	.social_row {
-		margin-bottom: 3px;
 		display: block;
-		padding: 0px;
+		padding: 4px 0px;
 		text-align: center;
 	}
 	.social_icon {
@@ -1086,17 +1294,15 @@ footer {
 	}
 	#introduction {
 		color: #fff;
-		width: 97%;
+		width: 90%;
 		margin: auto;
-		height: 220px;
+		height: max-content;
 		position: relative;
-		top: 125px;
+		top: 175px;
 	}
 	#intro_inner_container {
 		text-transform: capitalize;
-		display: flex;
-		flex-direction: column;
-		gap: 0px;
+		display: block;
 		height: 100%;
 		width: 100%;
 	}
@@ -1107,38 +1313,44 @@ footer {
 		color: #000;
 	}
 	#intro_text {
-		font-size: 52px;
+		font-size: 40px;
 		font-weight: bolder;
 		font-family: "Montserrat";
 		margin-bottom: 7px;
 	}
 	#intro_2 {
-		text-align: center;
 		margin-bottom: 7px;
 	}
 	.header {
 		font-size: 23px;
-		padding-bottom: 7px;
+		padding-bottom: 15px;
+		padding-top: 30px;
+		background-color: #fff;
 	}
 	#services {
-        height: 742px;
-        padding-top: 32px;
+        height: 882px;
+        padding: 0px 0px 30px 0px;
+        background-color: #fff;
 	}
 	#service_container {
 		width: 98%;
-		height: 680px;
+		height: 743px;
 		display: block;
 	}
 	.service_header {
 		margin-bottom: 8px;
 	}
 	.service_item {
-		height: 217px;
+		height: 235px;
 		display: block;
-		margin-bottom: 10px !important;
-		width: 100%;
-		margin-right: 0px !important;
+		margin-bottom: 7px !important;
+		width: 95%;
+		margin-right: auto !important;
 		float: unset;
+		background-color: #fff;
+		padding: 17px 2px;
+		border: solid 1px #000;
+		margin-left: auto;
 	}
 	.service_image {
 		margin-bottom: 8px;
@@ -1149,22 +1361,71 @@ footer {
 	#service3 {
 		margin-top: unset;
 	}
+	#service_btn_wrapper {
+		width: 98%;
+		text-align: center;
+		margin-bottom: 0px;
+		margin-top: -6px;
+		clear: both;
+		background-color: #fff;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 30px;
+	}
+	#about {
+		background-color: #fff;
+		padding: 0px;
+		height: 642px;
+		margin-bottom: 7px;
+		box-sizing: border-box;
+	}
+	#about_body {
+		display: block;
+		width: 90%;
+		margin: auto;
+		padding: 0%;
+		box-sizing: border-box;
+		height: 579px;
+	}
+	#about_text {
+		padding: 0% 2%;
+	}
+	.skill_level{
+		font-size: 11px;
+		position: relative;
+		top: -6px;
+	}
+	#python_meter, #web_dev_meter, #web_des_meter, #soft_dev_meter {
+		display: flex;
+		box-sizing: border-box;
+		height: 14px;
+		width: 85%;
+		border-radius: 4px;
+		text-align: center;
+	}
 	#project_container {
 		display: none;
 	}
 	#project_small_display {
 		width: 98%;
-		height: 1022px;
+		height: 1000px;
 		background-color: #f1f1f1;
 		display: block;
 		margin: auto;
-		/*! box-sizing: border-box; */
+		/* box-sizing: border-box; */
+	}
+	#mobile_project5 > .proj_name_mobile {
+		padding-bottom: 30px;
+		background-color: #fff;
+	}
+	#mobile_project5 {
+		margin-bottom: 0px !important;
 	}
 	.mobile_proj_cont {
 		height: 194px;
 		box-sizing: border-box;
 		background-color: #fff;
-		margin-bottom: 11px !important;
+		margin-bottom: 7px !important;
 		text-align: center;
 		width: 100%;
 		float: none;
@@ -1175,10 +1436,11 @@ footer {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 100%;
 	}
 	.mobile_proj_cont img{
 		height: 158px;
-		width: 100%;
+		width: 96%;
 	}
 	#col_1 {
 		display: grid;
@@ -1223,10 +1485,11 @@ footer {
 	#col_2b {
 	  padding: 0%;
 		background-color: transparent;
-  }
+	}
 	#projects {
-		height: 1055px;
+		height: 1108px;
 		background: #f1f1f1;
+		padding-top: 0px;
 	}
 	.project_image {
 		width: 100%;
@@ -1245,6 +1508,7 @@ footer {
 	#contact_container {
 		width: 100%;
 		box-sizing: border-box;
+		display: inline;
 	}
 	#contact_me {
 		font-size: 16px;
@@ -1253,17 +1517,23 @@ footer {
 	#contact_text a {
 		text-decoration: none;
 	}
+	#contact_button_wrap {
+		display: inline;
+		margin-left: 20%;
+	}
 	#contact_button {
 		display: inline-flex;
+		width: 100px;
 	}
 	footer {
 		height: max-content;
-		padding: 2% 2%;
+		padding: 20px 0%;
 		display: block;
+		box-sizing: border-box;
 	}
 	#link_wrapper {
 		padding-left: 0%;
-		height: 130px;
+		height: 160px;
 	}
 	#link_wrapper header {
 		font-weight: bolder;
@@ -1294,9 +1564,8 @@ footer {
 		text-align: center;
 	}
 	.social_row {
-		margin-bottom: 3px;
 		display: block;
-		padding: 0px;
+		padding: 4px 0px;
 		text-align: center;
 	}
 	.social_icon {
@@ -1378,18 +1647,16 @@ footer {
 	}
 	#introduction {
 		color: #fff;
-		width: 97%;
+		width: 96%;
 		margin: auto;
-		height: 220px;
+		height: max-content;
 		position: relative;
-		top: 125px;
+		top: 170px;
 	}
 	#intro_inner_container {
 		text-transform: capitalize;
-		display: flex;
-		flex-direction: column;
-		gap: 0px;
-		height: 100%;
+		display: block;
+		height: max-content;
 		width: 100%;
 	}
 	#intro_inner_container a {
@@ -1399,38 +1666,40 @@ footer {
 		color: #000;
 	}
 	#intro_text {
-		font-size: 52px;
+		font-size: 38px;
 		font-weight: bolder;
 		font-family: "Montserrat";
-		margin-bottom: 7px;
+		margin-bottom: 6px;
 	}
 	#intro_2 {
-		text-align: center;
-		margin-bottom: 7px;
+		margin-bottom: 6px;
 	}
 	.header {
 		font-size: 23px;
 		padding-bottom: 7px;
 	}
 	#services {
-        height: 742px;
-        padding-top: 32px;
+		height: 866px;
+		padding-top: 0px;
+		padding-bottom: 30px;
+		box-sizing: content-box;
 	}
 	#service_container {
 		width: 98%;
-		height: 680px;
+		height: 759px;
 		display: block;
 	}
 	.service_header {
 		margin-bottom: 8px;
 	}
 	.service_item {
-		height: 217px;
+		height: 238px;
 		display: block;
-		margin-bottom: 10px;
+		margin: auto;
 		width: 100%;
-		margin-right: 0px;
+		margin-bottom: 7px !important;
 		float: unset;
+		padding: 17px 1px;
 	}
 	.service_image {
 		margin-bottom: 8px;
@@ -1440,23 +1709,37 @@ footer {
 	}
 	#service3 {
 		margin-top: 0px;
+		margin-bottom: 0% !important;
+	}
+	#service_btn_wrapper {
+		width: 98%;
+		text-align: center;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		clear: both;
+		background-color: #fff;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 0px;
+	}
+	#about_text > p {
+		text-align: justify;
 	}
 	#project_container {
 		display: none;
 	}
 	#project_small_display {
 		width: 98%;
-		height: 1022px;
+		height: 1016px;
 		background-color: #f1f1f1;
 		display: block;
 		margin: auto;
-		/*! box-sizing: border-box; */
 	}
 	.mobile_proj_cont {
 		height: 194px;
 		box-sizing: border-box;
 		background-color: #fff;
-		margin-bottom: 11px !important;
+		margin-bottom: 7px !important;
 		text-align: center;
 		float: unset;
 		width: 100%;
@@ -1471,6 +1754,14 @@ footer {
 	.mobile_proj_cont img{
 		height: 158px;
 		width: 100%;
+	}
+	#mobile_project5 > .proj_name_mobile {
+		padding-bottom: 0px;
+		background-color: #fff;
+	}
+	#mobile_project5 {
+		padding-bottom: 19px;
+		height: 210px;
 	}
 	#col_1 {
 		display: grid;
@@ -1515,10 +1806,12 @@ footer {
 	#col_2b {
 	  padding: 0%;
 		background-color: transparent;
-  }
+  	}
 	#projects {
-		height: 1055px;
+		height: 1081px;
 		background: #f1f1f1;
+		padding-bottom: 0px;
+		margin-bottom: 7px;
 	}
 	.project_image {
 		width: 100%;
@@ -1545,22 +1838,26 @@ footer {
 	}
 	#contact_text {
 		position: unset;
+		padding-left: 2%;
 	}
 	#contact_text a {
 		text-decoration: none;
 	}
+	#contact_button_wrap {
+		margin-left: 19%;
+	}
 	#contact_button {
 		display: inline-flex;
-		width: 75px;
+		width: 90px;
 	}
 	footer {
-		height: 289px;
-		padding: 2% 2%;
+		height: 323px;
+		padding: 20px 0px;
 		display: block;
 	}
 	#link_wrapper {
 		padding-left: 0%;
-		height: 130px;
+		height: 153px;
 	}
 	#link_wrapper header {
 		font-weight: bolder;
@@ -1568,7 +1865,7 @@ footer {
 		text-align: center;
 	}
 	#social_wrapper {
-		height: 146px;
+		height: 145px;
 	}
 	#quick_links {
 		display: block;
@@ -1591,9 +1888,8 @@ footer {
 		text-align: center;
 	}
 	.social_row {
-		margin-bottom: 3px;
 		display: block;
-		padding: 0px;
+		padding: 4px 0px;
 		text-align: center;
 	}
 	.social_icon {
