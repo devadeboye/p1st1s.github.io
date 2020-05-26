@@ -49,7 +49,7 @@ body{
 }
 #background_overlay {
 	height: 458px;
-	background-color: rgb(0,0,0,0.6);
+	background-color: rgb(0,0,0,0);
 }
 #mobile_nav_btn, #mobile_nav{
 	display: none;
@@ -87,7 +87,7 @@ body{
 	width: 456px;
 }
 #intro_2 {
-	margin-bottom: 5px;
+	margin-bottom: 7px;
 }
 #intro_text {
 	font-size: 60px;
@@ -99,13 +99,13 @@ body{
 	text-align: center;
 	font-size: 23px;
 	font-weight: bolder;
-	padding-bottom: 13px;
+	padding-bottom: 25px;
 	text-transform: uppercase;
 }
 #about {
 	background-color: #fff;
-	padding-top: 40px;
-	height: 380px;
+	padding: 40px;
+	height: 383px;
 	margin-bottom: 7px;
 	box-sizing: border-box;
 }
@@ -146,7 +146,7 @@ body{
 	display: flex;
 	box-sizing: border-box;
 	height: 14px;
-	width: 50%;
+	width: 62%;
 	text-align: center;
 }
 #python_meter > .on {
@@ -189,8 +189,8 @@ body{
 #services {
     width: 100%;
 	background: #fff;
-	padding-top: 47px;
-    height: 370px;
+	padding: 40px 0px;
+    height: 348px;
     box-sizing: border-box;
     margin-bottom: 7px;
 }
@@ -202,12 +202,12 @@ body{
 	gap: 5%;
 	box-sizing: border-box;
 	padding: 0% 4%;
-	height: 200px;
+	height: 213px;
 }
 .service_item {
 	display: flex;
 	flex-direction: column;
-	gap: 17px;
+	gap: 15px;
 }
 #service_btn_wrapper {
 	width: 100%;
@@ -216,19 +216,26 @@ body{
 	margin-top: 15px;
 }
 #service1{
-	gap: 14px;
+	gap: 15px;
 }
 #service1_text {
 	margin-top: 1px;
 }
+#web_dev_cta {
+	margin: auto;
+}
 #service3{
-	gap: 21px;
+	gap: 15px;
 }
 #service3_text {
 	margin-top: -2px;
 }
+#web_scraping_cta {
+	margin: auto;
+}
 .service_image {
 	text-align: center;
+	height: 31px;
 }
 #web_dev_icon {
 	scale: 1.2;
@@ -243,6 +250,9 @@ body{
 }
 .service_description {
 	text-align: center;
+}
+#software_cta {
+	margin: auto;
 }
 #projects {
 	min-height: 400px;
@@ -281,7 +291,7 @@ body{
 	height: 500px;
 }
 #contact_me {
-	padding: 24px 0px;
+	padding: 25px 0px;
 	font-size: 16px;
 	background-color: #fff;
 }
@@ -293,11 +303,12 @@ body{
 	align-items: center;
 	gap: 58%;
 }
-#contact_text {
-	/*! float: left; */
+#contact_button {
+	position: relative;
+	left: 80%;
 }
 footer {
-	height: 230px;
+	height: 206px;
 	background: #000;
 	color: #ccc;
 	box-sizing: border-box;
@@ -389,31 +400,59 @@ footer {
 	#services {
 		width: 100%;
 		background: #fff;
-		padding-top: 47px;
-		height: 410px;
+		padding: 30px 0px;
+		height: 570px;
 		box-sizing: border-box;
 		margin-bottom: 7px;
 	}
+	.header {
+		text-align: center;
+		font-size: 23px;
+		font-weight: bolder;
+		padding-bottom: 19px;
+		text-transform: uppercase;
+	}
 	#service_container {
 		width: 96%;
-		gap: 14px;
 		padding: 0% 0%;
-		height: 224px;
+		height: 460px;
+		display: block;
 	}
 	.service_item {
-		padding: 2%;
+		display: flex;
+		flex-direction: column;
+		float: left;
+		width: 46%;
+	}
+	.service_item {
+		padding: 0% 2%;
 	}
 	#service1 {
 		gap: 11px;
+		padding-bottom: 30px;
 	}
 	#service1_text {
 	 margin-top: 1px;
   }
+	#service2{
+		padding-bottom: 30px;
+	}
 	.service_item {
 		gap: 13px;
 	}
 	#service3 {
 		gap: 17px;
+		padding-top: 30px;
+	}
+	#web_scraping_cta {
+		margin: auto;
+	}
+	#about {
+		background-color: #fff;
+		padding-top: 30px;
+		height: max-content;
+		margin-bottom: 7px;
+		box-sizing: border-box;
 	}
 	#python_meter, #web_dev_meter, #web_des_meter, #soft_dev_meter {
 		display: flex;
@@ -429,6 +468,7 @@ footer {
 	}
 	#projects {
 		height: 411px;
+		padding: 30px 0px;
 	}
 	#project_container {
 		height: 350px;
@@ -441,6 +481,8 @@ footer {
 	}
 	#contact_me {
 		font-size: 20px;
+		padding: 19px 0px;
+		background-color: #fff;
 	}
 	#contact_container {
 		width: 90%;
@@ -467,16 +509,16 @@ footer {
 	}
 	#background_overlay {
 		height: 458px;
-		background-color: rgb(0,0,0,0.6);
+		background-color: rgb(0,0,0,0);
 	}
 	#mobile_nav_btn, #mobile_nav{
 		display: none;
 	}
 	#large_nav {
 		display: block;
-		width: 45%;
+		width: 47%;
 		position: relative;
-		left: 52%;
+		left: 50%;
 		top: 10px;
 	}
 	#nav_list {
@@ -520,16 +562,16 @@ footer {
 		margin-bottom: 8px;
 	}
 	.header {
-		padding-bottom: 20px;
+		padding-bottom: 19px;
 	}
 	#services {
-		padding: 40px 0px;
-		height: 645px;
+		padding: 30px 0px;
+		height: 578px;
 	}
 	#service_container {
 		width: 97%;
 		padding: 0% 0%;
-		height: 438px;
+		height: 470px;
 		display: block;
 	}
 	#service_btn_wrapper {
@@ -538,28 +580,31 @@ footer {
 		margin-bottom: 40px;
 		margin-top: 30px;
 	}
+	#service1 {
+		padding-bottom: 30px;
+	}
 	.service_item {
-		background-color: #f9f9f9;
-		padding: 14px 10px;
+		background-color: #fff;
+		padding: 0% 2%;
 		width: 45%;
 		display: block;
-		margin-right: 17px;
-		height: 180px;
+		height: 219px;
 		float: left;
-		/*! border: solid 1px #f1f1f1; */
 	}
 	#service2 {
 		margin-right: 0px;
+		padding-bottom: 30px;
 	}
 	#service1_text {
-		margin-top: 3px;
+		margin-bottom: 11px;
 	}
 	#service3{
-		margin-top: 18px;
+		padding-top: 30px;
+		height: 190px;
 	}
 	.service_image {
 		text-align: center;
-		margin-bottom: 5px;
+		margin-bottom: 11px;
 	}
 	#web_dev_skill {
 		margin-right: 7%;
@@ -583,15 +628,16 @@ footer {
 		text-align: center;
 		font-weight: bold;
 		text-transform: uppercase;
-		margin-bottom: 5px;
+		margin-bottom: 11px;
 	}
 	.service_description {
 		text-align: center;
+		margin-bottom: 11px;
 	}
 	#about {
 		background-color: #fff;
-		padding: 40px 0px;
-		height: 400px;
+		padding: 30px 0px;
+		height: max-content;
 		margin-bottom: 7px;
 		box-sizing: border-box;
 	}
@@ -604,8 +650,8 @@ footer {
 	}
 	#projects {
 		background: #fff;
-		padding: 40px 0px;
-		height: 765px;
+		padding: 30px 0px 18px 0px;
+		height: max-content;
 	}
 	#project_container {
 		display: none;
@@ -664,7 +710,7 @@ footer {
 		grid-template-columns: 8fr 5fr;
 	}
 	#contact_me {
-		padding: 15px 0px;
+		padding: 19px 0px;
 		clear: both;
 	}
 	#contact_container {
@@ -672,6 +718,14 @@ footer {
 		margin: auto;
 		box-sizing: border-box;
 		gap: 35%;
+	}
+	#contact_me {
+		font-size: 20px;
+	}
+	#contact_button {
+		width: 110px;
+		position: relative;
+		left: 100%;
 	}
 	footer {
 		grid-template-columns: 1fr 1fr;
@@ -736,7 +790,7 @@ footer {
 	}
 	#background_overlay {
 		height: 458px;
-		background-color: rgb(0,0,0,0.6);
+		background-color: rgb(0,0,0,0);
 		width: 100%;
 	}
 	#mobile_nav_btn{
@@ -769,9 +823,18 @@ footer {
 		padding: 0% 5%;
 		display: block;
 		margin: 0px;
+		height: 226px;
+		list-style-type: none;
+		text-transform: capitalize;
 	}
 	#nav_list a {
 		color: #000;
+		text-decoration: none;
+		display: block;
+		clear: both;
+		position: static;
+		margin-right: 0px;
+		width: 100%;
 	}
 	#nav_list a li {
 		height: 36px;
@@ -804,41 +867,63 @@ footer {
 	}
 	.header {
 		font-size: 23px;
-		padding-bottom: 9px;
+		padding-bottom: 11px;
 	}
 	#services {
-		background: #f1f1f1;
-        height: 588px;
-        padding-top: 38px;
+		background: #fff;
+        height: 636px;
+        padding: 30px 0px;
 		box-sizing: border-box;
 	}
 	#service_container {
 		width: 98%;
 		padding: 0%;
-		height: 509px;
+		height: 535px;
 		display: block;
 	}
 	.service_header {
-		margin-bottom: 7px;
+		margin-bottom: 11px;
 	}
 	.service_item {
 		box-sizing: border-box;
-		padding: 2% 2%;
-		height: 245px;
+		padding: 0% 2%;
+		height: 268px;
 		background-color: #fff;
 		float: left;
-		margin-right: 13px;
-		width: 48.9%;
+		width: 50%;
 		display: block;
 	}
+	#service1 {
+		padding-bottom: 30px;
+	}
+	#service2 {
+		margin-right: 0px;
+		padding-bottom: 30px;
+	}
+	.service_description {
+		text-align: center;
+		margin-bottom: 11px;
+	}
 	.service_image {
-		margin-bottom: 7px;
+		margin-bottom: 11px;
 	}
 	#service1_text {
 		margin-top: 0px;
+		margin-bottom: 11px;
 	}
 	#service3 {
-		margin-top: 13px;
+		padding-top: 30px;
+		height: auto;
+	}
+	#service3_text {
+		margin-top: 0px;
+	}
+	#about {
+		background-color: #fff;
+		padding: 30px 0px;
+		height: 432px;
+		margin-bottom: 7px;
+		box-sizing: border-box;
 	}
 	#project_container {
 		width: 98%;
@@ -881,11 +966,11 @@ footer {
 		margin-bottom: 0px;
 	}
 	#projects {
-		height: 761px;
-		background: #f1f1f1;
-		margin-top: 25px;
+		height: 810px;
+		background: #fff;
 		box-sizing: border-box;
 		clear: both;
+		padding: 30px 0px;
 	}
 	.project_image {
 		width: 100%;
@@ -898,6 +983,16 @@ footer {
 		align-items: center;
 		justify-content: center;
 		margin-top: -5px;
+	}
+	#contact_me {
+		font-size: 20px;
+		padding: 19px 0px;
+		clear: both;
+	}
+	#contact_button {
+		width: 110px;
+		position: relative;
+		left: 80%;
 	}
 	footer {
 		height: 170px;
@@ -1009,38 +1104,46 @@ footer {
 	.header {
 		font-size: 23px;
 		padding-top: 0px;
-		padding-bottom: 15px;
+		padding-bottom: 11px;
 	}
 	#services {
-        height: 713px;
-        padding: 35px 0px;
+        height: max-content;
+        padding: 30px 0px;
         background-color: #fff;
 	}
 	#service_container {
 		width: 98%;
-		height: 554px;
+		height: 536px;
 		display: block;
+		margin: auto;
 	}
 	.service_header {
-		margin-bottom: 9px;
+		margin-bottom: 11px;
 	}
 	.service_item {
 		height: 270px;
 		display: block;
 		margin-bottom: 0px;
-		width: 48%;
-		padding: 13px 5px;
+		width: 50%;
+		padding: 0px 1%;
 		box-sizing: border-box;
-		background-color: #f4f4f4;
+		background-color: #fff;
+		float: left;
 	}
 	.service_image {
-		margin-bottom: 9px;
+		margin-bottom: 11px;
+		height: 31px;
+	}
+	#web_dev_icon {
+		scale: 1;
 	}
 	#service1_text {
 		margin-top: 0px;
+		margin-bottom: 11px;
 	}
 	#service3 {
-		gap: 9px;
+		padding-top: 30px;
+		height: auto;
 	}
 	#service_btn_wrapper {
 		width: 100%;
@@ -1052,9 +1155,20 @@ footer {
 	#about {
 		background-color: #fff;
 		padding: 30px 0px;
-		height: 430px;
+		height: max-content;
 		margin-bottom: 7px;
 		box-sizing: border-box;
+	}
+	#about_body {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		width: 97%;
+		margin: auto;
+		padding: 0% 2%;
+		box-sizing: border-box;
+	}
+	#about_text {
+		padding: 0% 2% 0% 10%;
 	}
 	.skill_level {
 		font-size: 11px;
@@ -1079,6 +1193,9 @@ footer {
 		margin-bottom: 11px;
 		text-align: center;
 		width: 100%;
+	}
+	#mobile_project5 {
+    margin-bottom: 0px;
 	}
 	.proj_name_mobile {
 		height: 36px;
@@ -1135,9 +1252,9 @@ footer {
 		background-color: transparent;
   }
 	#projects {
-		height: 1183px;
+		height: 1170px;
 		background: #fff;
-		padding: 30px 0px;
+		padding: 30px 0px 18px 0px;
 		margin-top: 0px;
 	}
 	.project_image {
@@ -1160,7 +1277,7 @@ footer {
 	}
 	#contact_me {
 		font-size: 16px;
-		padding: 15px 0px;
+		padding: 19px 0px;
 	}
 	#contact_text {
 		position: relative;
@@ -1171,6 +1288,9 @@ footer {
 	}
 	#contact_button {
 		display: inline-flex;
+		width: 100px;
+		position: relative;
+		left: 85%;
 	}
 	footer {
 		height: max-content;
@@ -1323,43 +1443,55 @@ footer {
 	}
 	.header {
 		font-size: 23px;
-		padding-bottom: 15px;
-		padding-top: 30px;
+		padding-bottom: 11px;
 		background-color: #fff;
 	}
+	#projects > .header{
+		padding-top: 30px;
+	}
 	#services {
-        height: 882px;
-        padding: 0px 0px 30px 0px;
+        height: 834px;
+        padding: 30px 0px 30px 0px;
         background-color: #fff;
 	}
 	#service_container {
 		width: 98%;
-		height: 743px;
+		height: max-content;
 		display: block;
+	}
+	#service1 {
+		padding-bottom: 11px;
+		padding-top: 11px;
+	}
+	#service2 {
+		margin-right: 0px;
+		padding-bottom: 11px;
 	}
 	.service_header {
-		margin-bottom: 8px;
+		margin-bottom: 11px;
 	}
 	.service_item {
-		height: 235px;
+		height: max-content;
 		display: block;
-		margin-bottom: 7px !important;
+		margin-bottom: 11px !important;
 		width: 95%;
 		margin-right: auto !important;
 		float: unset;
 		background-color: #fff;
-		padding: 17px 2px;
+		padding: 11px 2px;
 		border: solid 1px #000;
 		margin-left: auto;
 	}
 	.service_image {
-		margin-bottom: 8px;
+		margin-bottom: 11px;
 	}
 	#service1_text {
 		margin-top: 0px;
+		margin-bottom: 11px;
 	}
 	#service3 {
 		margin-top: unset;
+		padding-top: 11px;
 	}
 	#service_btn_wrapper {
 		width: 98%;
@@ -1374,21 +1506,25 @@ footer {
 	}
 	#about {
 		background-color: #fff;
-		padding: 0px;
-		height: 642px;
+		padding: 30px 0px;
+		height: 584px;
 		margin-bottom: 7px;
 		box-sizing: border-box;
 	}
 	#about_body {
 		display: block;
-		width: 90%;
+		width: 92%;
 		margin: auto;
 		padding: 0%;
 		box-sizing: border-box;
-		height: 579px;
+		height: 482px;
+	}
+	#profile_pics_cont {
+		width: 62%;
+		margin: auto;
 	}
 	#about_text {
-		padding: 0% 2%;
+		padding: 0% 5%;
 	}
 	.skill_level{
 		font-size: 11px;
@@ -1407,7 +1543,7 @@ footer {
 		display: none;
 	}
 	#project_small_display {
-		width: 98%;
+		width: 100%;
 		height: 1000px;
 		background-color: #f1f1f1;
 		display: block;
@@ -1415,7 +1551,7 @@ footer {
 		/* box-sizing: border-box; */
 	}
 	#mobile_project5 > .proj_name_mobile {
-		padding-bottom: 30px;
+		padding-bottom: 19px;
 		background-color: #fff;
 	}
 	#mobile_project5 {
@@ -1437,6 +1573,8 @@ footer {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+		position: relative;
+		top: -5px;
 	}
 	.mobile_proj_cont img{
 		height: 158px;
@@ -1487,9 +1625,9 @@ footer {
 		background-color: transparent;
 	}
 	#projects {
-		height: 1108px;
+		height: 1088px;
 		background: #f1f1f1;
-		padding-top: 0px;
+		padding: 0px 0px;
 	}
 	.project_image {
 		width: 100%;
@@ -1512,7 +1650,7 @@ footer {
 	}
 	#contact_me {
 		font-size: 16px;
-		padding: 15px 0px;
+		padding: 19px 0px;
 	}
 	#contact_text a {
 		text-decoration: none;
@@ -1524,16 +1662,19 @@ footer {
 	#contact_button {
 		display: inline-flex;
 		width: 100px;
+		position: relative;
+		left: 7%;
 	}
 	footer {
 		height: max-content;
-		padding: 20px 0%;
+		padding: 30px 0%;
 		display: block;
 		box-sizing: border-box;
 	}
 	#link_wrapper {
 		padding-left: 0%;
-		height: 160px;
+		height: 146px;
+		margin-bottom: 19px;
 	}
 	#link_wrapper header {
 		font-weight: bolder;
@@ -1541,7 +1682,7 @@ footer {
 		text-align: center;
 	}
 	#social_wrapper {
-		height: 146px;
+		height: 131px;
 	}
 	#quick_links {
 		display: block;
@@ -1550,7 +1691,8 @@ footer {
 	.q_link_row {
 		display: block;
 		text-align: center;
-		margin-bottom: 3px;
+		margin-bottom: 0px;
+		padding: 5px 0px;
 	}
 	.q_link_icon {
 	margin-right: 4px;
@@ -1565,7 +1707,7 @@ footer {
 	}
 	.social_row {
 		display: block;
-		padding: 4px 0px;
+		padding: 5px 0px;
 		text-align: center;
 	}
 	.social_icon {
@@ -1676,40 +1818,66 @@ footer {
 	}
 	.header {
 		font-size: 23px;
-		padding-bottom: 7px;
+		padding-bottom: 11px;
+	}
+	#projects > .header {
+		padding-top: 30px;
 	}
 	#services {
-		height: 866px;
-		padding-top: 0px;
+		height: 852px;
+		padding-top: 30px;
 		padding-bottom: 30px;
 		box-sizing: content-box;
+		width: 100%;
+		margin-bottom: 11px;
 	}
 	#service_container {
 		width: 98%;
-		height: 759px;
+		height: 809px;
 		display: block;
 	}
+	#service1 {
+		padding-bottom: 11px;
+		padding-top: 11px;
+		height: 264px;
+	}
+	#service2 {
+		margin-right: 0px;
+		padding-bottom: 11px;
+		height: 261px;
+	}
 	.service_header {
-		margin-bottom: 8px;
+		margin-bottom: 11px;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.service_description {
+		text-align: center;
+		margin-bottom: 11px;
 	}
 	.service_item {
-		height: 238px;
+		height: max-content;
 		display: block;
 		margin: auto;
 		width: 100%;
-		margin-bottom: 7px !important;
+		margin-bottom: 11px !important;
 		float: unset;
-		padding: 17px 1px;
+		padding: 11px 1px;
+		border: solid 1px #000;
 	}
 	.service_image {
-		margin-bottom: 8px;
+		margin-bottom: 11px;
 	}
 	#service1_text {
 		margin-top: 0px;
+		margin-bottom: 11px;
 	}
 	#service3 {
 		margin-top: 0px;
 		margin-bottom: 0% !important;
+		padding-top: 11px;
+		height: 262px;
 	}
 	#service_btn_wrapper {
 		width: 98%;
@@ -1721,6 +1889,13 @@ footer {
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 0px;
+	}
+	#about {
+		background-color: #fff;
+		padding: 30px 0px;
+		height: 560px;
+		margin-bottom: 11px;
+		box-sizing: border-box;
 	}
 	#about_text > p {
 		text-align: justify;
@@ -1739,7 +1914,7 @@ footer {
 		height: 194px;
 		box-sizing: border-box;
 		background-color: #fff;
-		margin-bottom: 7px !important;
+		margin-bottom: 11px !important;
 		text-align: center;
 		float: unset;
 		width: 100%;
@@ -1808,10 +1983,10 @@ footer {
 		background-color: transparent;
   	}
 	#projects {
-		height: 1081px;
+		height: 1101px;
 		background: #f1f1f1;
 		padding-bottom: 0px;
-		margin-bottom: 7px;
+		margin-bottom: 11px;
 	}
 	.project_image {
 		width: 100%;
@@ -1834,7 +2009,7 @@ footer {
 	}
 	#contact_me {
 		font-size: 16px;
-		padding: 15px 0px;
+		padding: 19px 0px;
 	}
 	#contact_text {
 		position: unset;
@@ -1849,15 +2024,19 @@ footer {
 	#contact_button {
 		display: inline-flex;
 		width: 90px;
+		position: relative;
+		left: -2%;
 	}
 	footer {
-		height: 323px;
-		padding: 20px 0px;
+		height: 361px;
+		padding: 30px 0px;
 		display: block;
+		box-sizing: border-box;
 	}
 	#link_wrapper {
 		padding-left: 0%;
-		height: 153px;
+		height: 145px;
+		margin-bottom: 19px;
 	}
 	#link_wrapper header {
 		font-weight: bolder;
@@ -1865,7 +2044,7 @@ footer {
 		text-align: center;
 	}
 	#social_wrapper {
-		height: 145px;
+		height: 137px;
 	}
 	#quick_links {
 		display: block;
@@ -1874,7 +2053,8 @@ footer {
 	.q_link_row {
 		display: block;
 		text-align: center;
-		margin-bottom: 3px;
+		margin-bottom: 0px;
+		padding: 5px 0px;
 	}
 	.q_link_icon {
 	margin-right: 4px;
@@ -1889,7 +2069,7 @@ footer {
 	}
 	.social_row {
 		display: block;
-		padding: 4px 0px;
+		padding: 5px 0px;
 		text-align: center;
 	}
 	.social_icon {
