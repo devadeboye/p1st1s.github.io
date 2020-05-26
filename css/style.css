@@ -22,10 +22,11 @@ body{
     font-family: "PTSans";
 	font-size: 14px;
 	background-color: #f1f1f1;
+    color: #0f101e;
 }
 .ea_btn {
 	height: 38px !important;
-	background-color: #f2f4f5;
+	background-color: #ffa939;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	width: 90px;
 	border-radius: 5px;
@@ -33,7 +34,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	color: #000;
+	color: #27284d;
 }
 .show{
 	display: block !important;
@@ -67,10 +68,10 @@ body{
 }
 #nav_list a{
 	text-decoration: none;
-	color: #fff;
+	color: #e8ddce;
 }
 #introduction {
-	color: #fff;
+	color: #e8ddce;
 	width: 50%;
 	margin: auto;
 	height: 155px;
@@ -150,16 +151,18 @@ body{
 	text-align: center;
 }
 #python_meter > .on {
-	background-color: #ccc;
+	background-color: #27284d;
 	width: 97%;
+	color: #e8ddce;
 }
 #python_meter > .off{
-	background-color: #f1f1f1;
+	background-color: #e8ddce;
 	width: 3%;
 }
 #web_dev_meter > .on {
-	background-color: #ccc;
+	background-color: #27284d;
 	width: 95%;
+	color: #e8ddce;
 }
 .skill_level {
 	font-size: 11px;
@@ -167,23 +170,25 @@ body{
 	top: -4px;
 }
 #web_dev_meter > .off{
-	background-color: #f1f1f1;
+	background-color: #e8ddce;
 	width: 5%;
 }
 #web_des_meter > .on {
-	background-color: #ccc;
+	background-color: #27284d;
 	width: 70%;
+	color: #e8ddce;
 }
 #web_des_meter > .off{
-	background-color: #f1f1f1;
+	background-color: #e8ddce;
 	width: 30%;
 }
 #soft_dev_meter > .on {
-	background-color: #ccc;
+	background-color: #27284d;
 	width: 95%;
+	color: #e8ddce;
 }
 #soft_dev_meter > .off{
-	background-color: #f1f1f1;
+	background-color: #e8ddce;
 	width: 5%;
 }
 #services {
@@ -309,8 +314,8 @@ body{
 }
 footer {
 	height: 206px;
-	background: #000;
-	color: #ccc;
+	background: #27284d;
+	color: #e8ddce;
 	box-sizing: border-box;
 	padding: 40px 0%;
 	display: grid;
@@ -327,7 +332,7 @@ footer {
 }
 .social_row a {
 	text-decoration: none;
-	color: #797979;
+	color: #a8a095;
 }
 #facebook {
 	scale: 1.1;
@@ -358,7 +363,7 @@ footer {
 	box-sizing: border-box;
 }
 #quick_links a {
-	color: #797979;
+	color: #a8a095;
 	text-decoration: none;
 }
 .q_link_row{
@@ -370,7 +375,7 @@ footer {
 #email {
 	display: flex;
 	gap: 7px;
-	color: #797979;
+	color: #a8a095;
 }
 .project_name{
 	display: none;
@@ -501,6 +506,7 @@ footer {
 	body{
 		background-color: #f1f1f1;
 		font-size: 14px;
+		color: #0f101e;
 	}
 	#welcome{
 		height: 458px;
@@ -542,7 +548,7 @@ footer {
 		margin-right: 0px !important;
 	}
 	#introduction {
-		color: #fff;
+		color: #e8ddce;
 		width: max-content;
 		margin: auto;
 		height: 155px;
@@ -566,7 +572,7 @@ footer {
 	}
 	#services {
 		padding: 30px 0px;
-		height: 578px;
+		height: 565px;
 	}
 	#service_container {
 		width: 97%;
@@ -588,7 +594,7 @@ footer {
 		padding: 0% 2%;
 		width: 45%;
 		display: block;
-		height: 219px;
+		height: 199px;
 		float: left;
 	}
 	#service2 {
@@ -845,7 +851,7 @@ footer {
 		padding: 4px 0%;
 	}
 	#introduction {
-		color: #fff;
+		color: #e8ddce;
 		width: 97%;
 		top: 145px;
 	}
@@ -1073,7 +1079,7 @@ footer {
 		padding: 4px 0%;
 	}
 	#introduction {
-		color: #fff;
+		color: #e8ddce;
 		width: 97%;
 		margin: auto;
 		height: 220px;
@@ -1090,7 +1096,7 @@ footer {
 		text-align: center;
 		margin: auto;
 		margin-top: 1%;
-		color: #000;
+		color: #27284d;
 	}
 	#intro_text {
 		font-size: 52px;
@@ -1413,7 +1419,7 @@ footer {
 		padding: 4px 0%;
 	}
 	#introduction {
-		color: #fff;
+		color: #e8ddce;
 		width: 90%;
 		margin: auto;
 		height: max-content;
@@ -1430,7 +1436,7 @@ footer {
 		text-align: center;
 		margin: auto;
 		margin-top: 1%;
-		color: #000;
+		color: #27284d;
 	}
 	#intro_text {
 		font-size: 40px;
@@ -1479,7 +1485,7 @@ footer {
 		float: unset;
 		background-color: #fff;
 		padding: 11px 2px;
-		border: solid 1px #000;
+		border: solid 1px #0f101e;
 		margin-left: auto;
 	}
 	.service_image {
@@ -1788,7 +1794,7 @@ footer {
 		padding: 4px 0%;
 	}
 	#introduction {
-		color: #fff;
+		color: #e8ddce;
 		width: 96%;
 		margin: auto;
 		height: max-content;
@@ -1805,7 +1811,7 @@ footer {
 		text-align: center;
 		margin: auto;
 		margin-top: 1%;
-		color: #000;
+		color: #27284d;
 	}
 	#intro_text {
 		font-size: 38px;
@@ -1864,7 +1870,7 @@ footer {
 		margin-bottom: 11px !important;
 		float: unset;
 		padding: 11px 1px;
-		border: solid 1px #000;
+		border: solid 1px #0f101e;
 	}
 	.service_image {
 		margin-bottom: 11px;
