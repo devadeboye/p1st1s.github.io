@@ -454,16 +454,27 @@ footer {
 	}
 	#about {
 		background-color: #fff;
-		padding-top: 30px;
+		padding: 30px 0px;
 		height: max-content;
 		margin-bottom: 7px;
 		box-sizing: border-box;
+	}
+	#about_body {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		width: 95%;
+		margin: auto;
+		padding: 0% 2%;
+		box-sizing: border-box;
+	}
+	#about_text {
+		padding: 0% 2% 0% 10%;
 	}
 	#python_meter, #web_dev_meter, #web_des_meter, #soft_dev_meter {
 		display: flex;
 		box-sizing: border-box;
 		height: 14px;
-		width: 50%;
+		width: 62%;
 		text-align: center;
 	}
 	.skill_level {
@@ -643,9 +654,20 @@ footer {
 	#about {
 		background-color: #fff;
 		padding: 30px 0px;
-		height: max-content;
+		height: 373px;
 		margin-bottom: 7px;
 		box-sizing: border-box;
+	}
+	#about_body {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		width: 95%;
+		margin: auto;
+		padding: 0% 2%;
+		box-sizing: border-box;
+	}
+	#about_text {
+		padding: 0% 2% 0% 10%;
 	}
 	#python_meter, #web_dev_meter, #web_des_meter, #soft_dev_meter {
 		display: flex;
@@ -656,8 +678,8 @@ footer {
 	}
 	#projects {
 		background: #fff;
-		padding: 30px 0px 18px 0px;
-		height: max-content;
+		padding: 30px 0px 10px 0px;
+		height: 772px;
 	}
 	#project_container {
 		display: none;
@@ -720,18 +742,20 @@ footer {
 		clear: both;
 	}
 	#contact_container {
-		width: 90%;
+		width: 95%;
 		margin: auto;
 		box-sizing: border-box;
-		gap: 35%;
+		gap: 0%;
+	}
+	#contact_button_wrap {
+		margin-left: 53%;
 	}
 	#contact_me {
 		font-size: 20px;
 	}
 	#contact_button {
 		width: 110px;
-		position: relative;
-		left: 100%;
+		position: static;
 	}
 	footer {
 		grid-template-columns: 1fr 1fr;
@@ -776,8 +800,11 @@ footer {
 	}
 	#email {
 		display: flex;
-		gap: 2%;
+		gap: 0%;
 		color: #797979;
+	}
+	#show_email {
+		margin-left: 7px;
 	}
 	#blank {
 		display: none;
@@ -924,12 +951,42 @@ footer {
 	#service3_text {
 		margin-top: 0px;
 	}
+	#software_cta {
+		margin: auto;
+		padding: 0px 5px;
+	}
 	#about {
 		background-color: #fff;
 		padding: 30px 0px;
-		height: 432px;
+		height: 386px;
 		margin-bottom: 7px;
 		box-sizing: border-box;
+	}
+	#about_body {
+		display: block;
+		width: 98%;
+		margin: auto;
+		padding: 0% 2%;
+		box-sizing: border-box;
+	}
+	#profile_pics_cont {
+		width: 29%;
+		float: left;
+	}
+	#about_text {
+		padding: 0% 0% 0% 6%;
+		width: 65%;
+		float: left;
+	}
+	.skill_row {
+		height: 40px;
+	}
+	#python_meter, #web_dev_meter, #web_des_meter, #soft_dev_meter {
+		display: flex;
+		box-sizing: border-box;
+		height: 14px;
+		width: 62%;
+		text-align: center;
 	}
 	#project_container {
 		width: 98%;
@@ -938,6 +995,21 @@ footer {
 		background-color: #f1f1f1;
 		gap: 12px;
 		box-sizing: border-box;
+	}
+	.mobile_proj_cont {
+		float: left;
+		width: 48%;
+		display: block;
+		margin-right: 12px;
+		background-color: #fff;
+		height: 231px;
+	}
+	#project_small_display {
+		display: block;
+		margin: auto;
+		width: 95%;
+		box-sizing: border-box;
+		height: 721px;
 	}
 	#col_1 {
 		display: grid;
@@ -995,10 +1067,18 @@ footer {
 		padding: 19px 0px;
 		clear: both;
 	}
+	#contact_button_wrap {
+		margin-left: 45%;
+	}
+	#contact_container {
+		width: 95%;
+		margin: auto;
+		box-sizing: border-box;
+		gap: 0%;
+	}
 	#contact_button {
 		width: 110px;
-		position: relative;
-		left: 80%;
+		position: static;
 	}
 	footer {
 		height: 170px;
@@ -1008,6 +1088,14 @@ footer {
 	}
 	#link_wrapper {
 		padding-left: 0%;
+	}
+	#email {
+		display: flex;
+		gap: 0%;
+		color: #797979;
+	}
+	#show_email {
+		margin-left: 7px;
 	}
 	.q_link_icon {
 		display: none;
@@ -1113,7 +1201,7 @@ footer {
 		padding-bottom: 11px;
 	}
 	#services {
-        height: max-content;
+        height: 637px;
         padding: 30px 0px;
         background-color: #fff;
 	}
@@ -1161,20 +1249,26 @@ footer {
 	#about {
 		background-color: #fff;
 		padding: 30px 0px;
-		height: max-content;
+		height: 403px;
 		margin-bottom: 7px;
 		box-sizing: border-box;
 	}
 	#about_body {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		width: 97%;
+		display: block;
+		width: 100%;
 		margin: auto;
-		padding: 0% 2%;
+		padding: 0% 0%;
 		box-sizing: border-box;
 	}
+	#profile_pics_cont {
+		float: left;
+		width: 34%;
+		padding: 0% 3%;
+	}
 	#about_text {
-		padding: 0% 2% 0% 10%;
+		padding: 0% 2%;
+		float: left;
+		width: 56%;
 	}
 	.skill_level {
 		font-size: 11px;
@@ -1292,14 +1386,16 @@ footer {
 	#contact_text a {
 		text-decoration: none;
 	}
+	#contact_button_wrap {
+		margin-left: 49%;
+	}
 	#contact_button {
 		display: inline-flex;
 		width: 100px;
-		position: relative;
-		left: 85%;
+		position: static;
 	}
 	footer {
-		height: max-content;
+		height: 346px;
 		padding: 20px 0px;
 		display: block;
 	}
@@ -1528,9 +1624,13 @@ footer {
 	#profile_pics_cont {
 		width: 62%;
 		margin: auto;
+		float: none;
+		padding: 0%;
 	}
 	#about_text {
 		padding: 0% 5%;
+		float: none;
+		width: unset;
 	}
 	.skill_level{
 		font-size: 11px;
@@ -1557,7 +1657,7 @@ footer {
 		/* box-sizing: border-box; */
 	}
 	#mobile_project5 > .proj_name_mobile {
-		padding-bottom: 19px;
+		padding-bottom: 10px;
 		background-color: #fff;
 	}
 	#mobile_project5 {
@@ -1631,7 +1731,7 @@ footer {
 		background-color: transparent;
 	}
 	#projects {
-		height: 1088px;
+		height: 1080px;
 		background: #f1f1f1;
 		padding: 0px 0px;
 	}
@@ -1668,8 +1768,6 @@ footer {
 	#contact_button {
 		display: inline-flex;
 		width: 100px;
-		position: relative;
-		left: 7%;
 	}
 	footer {
 		height: max-content;
@@ -1826,6 +1924,23 @@ footer {
 		font-size: 23px;
 		padding-bottom: 11px;
 	}
+	#about_body {
+		display: block;
+		width: 92%;
+		margin: auto;
+		padding: 0%;
+		box-sizing: border-box;
+		height: 545px;
+	}
+	#profile_pics_cont {
+		width: auto;
+		clear: both;
+		padding: 0%;
+	}
+	#about_text {
+		clear: both;
+		width: auto;
+	}
 	#projects > .header {
 		padding-top: 30px;
 	}
@@ -1885,6 +2000,10 @@ footer {
 		padding-top: 11px;
 		height: 262px;
 	}
+	#software_cta {
+		margin: auto;
+		width: 105px;
+	}
 	#service_btn_wrapper {
 		width: 98%;
 		text-align: center;
@@ -1899,7 +2018,7 @@ footer {
 	#about {
 		background-color: #fff;
 		padding: 30px 0px;
-		height: 560px;
+		height: 645px;
 		margin-bottom: 11px;
 		box-sizing: border-box;
 	}
