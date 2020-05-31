@@ -18,6 +18,16 @@
 	font-family: "PTSans";
 	src: url(../fonts/PTSans-Regular.ttf)
 }
+@keyframes dance{
+	0% {transform: rotateZ(0deg);}
+	25% {transform: rotateZ(15deg);}
+	50% {transform: rotateZ(-15deg);}
+	100% {transform: rotateZ(0deg);}
+}
+#lp_cta{
+	animation-name: dance;
+	animation-duration: 3s;
+}
 body{
     font-family: "PTSans";
 	font-size: 14px;
@@ -120,6 +130,10 @@ body{
 }
 #profile_pics_cont {
 	width: 76%;
+}
+#profile_pics_cont > img {
+	width: 100%;
+	margin: auto;
 }
 #profile_pics, #profile_pics_small {
 	margin: auto;
@@ -231,6 +245,12 @@ body{
 }
 #web_dev_cta {
 	margin: auto;
+	transition: width 0.8s, height 0.8s, font-size 0.8s;
+}
+#web_dev_cta:hover, #software_cta:hover, #web_scraping_cta:hover {
+	height: 45px !important;
+	width: 95px;
+	font-size: 15px;
 }
 #service3{
 	gap: 15px;
@@ -240,6 +260,7 @@ body{
 }
 #web_scraping_cta {
 	margin: auto;
+	transition: width 0.8s, height 0.8s, font-size 0.8s;
 }
 .service_image {
 	text-align: center;
@@ -261,6 +282,7 @@ body{
 }
 #software_cta {
 	margin: auto;
+	transition: width 0.8s, height 0.8s, font-size 0.8s;
 }
 #projects {
 	min-height: 400px;
@@ -1851,7 +1873,7 @@ footer {
 		font-size: 16px;
 	}
 	#welcome {
-		background: no-repeat url(../img/mobile_small.png);
+		background: no-repeat url(../img/mobile_small.jpg);
 		background-size: cover;
 		width: 100%;
 	}
@@ -1941,12 +1963,16 @@ footer {
 		margin: auto;
 		padding: 0%;
 		box-sizing: border-box;
-		height: 545px;
+		height: 554px;
 	}
 	#profile_pics_cont {
-		width: auto;
+		width: 80%;
 		clear: both;
 		padding: 0%;
+	}
+	#profile_pics_cont > img {
+		margin: auto;
+		width: 100%;
 	}
 	#about_text {
 		clear: both;
@@ -2013,7 +2039,7 @@ footer {
 	}
 	#software_cta {
 		margin: auto;
-		width: 105px;
+		width: 92px;
 	}
 	#service_btn_wrapper {
 		width: 98%;
@@ -2029,7 +2055,7 @@ footer {
 	#about {
 		background-color: #fff;
 		padding: 30px 0px;
-		height: 645px;
+		height: 655px;
 		margin-bottom: 11px;
 		box-sizing: border-box;
 	}

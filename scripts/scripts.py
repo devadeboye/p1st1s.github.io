@@ -36,10 +36,6 @@ def show_menu(event):
         close_button.classList.add("show")
         menu.classList.remove("hide")
         menu.classList.add("show")
-    #if menu.style.display == "none":
-    #    menu_button.style.display = "hide"
-    #    close_button.style.display = "block"
-    #    menu.style.display = "block"
 
 
 @bind("#close_icon", "click")
@@ -62,7 +58,3 @@ def hide_menu(event):
 @bind("#show_email", "click")
 def show_email(event):
     document["show_email"].textContent = "adeboye3a@gmail.com"
-
-
-# choose appropriate profile pics based on screen size
-profile_pics_selector()
